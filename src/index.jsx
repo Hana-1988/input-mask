@@ -1,23 +1,12 @@
-import React from 'react'
+import React, { useState } from 'react'
 import cities from './cities.json'
 
 function Index() {
- 
-const Input = ({handleChange, hint}) => {
+  const [inputValue,setInputValue]=useState('');
+  const []
   return (
-    <div className="input">
-      <label htmlFor="input" >
-        {hint}
-      </label>
-      <input
-        type="text"
-        id="input"
-        onChange={handleChange}
-      />
-    </div>
-  );
-};
+    <div>Index</div>
+  )
 }
 
 export default Index
-
