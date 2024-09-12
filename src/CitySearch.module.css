@@ -1,6 +1,5 @@
 
-input {
-  position: relative;
+.container {
   width: 250px;
   margin: 20px auto;
 }
