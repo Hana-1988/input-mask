@@ -16,7 +16,7 @@ function Index() {
     }
       }
   return (
-    <div>
+    <div className={styles.container}>
       <input
        type="text"
        value={inputValue}
