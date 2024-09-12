@@ -7,6 +7,12 @@ function Index() {
   function inputChangeHandler (c){
     const value=c.target.value;
     setInputValue(value);
+    const match=cities.find((city)=>city.toLocaleLowerCase()===value.toLocaleLowerCase());
+    if(match){
+      setCityGuess(match);
+    }else{
+      setCityGuess('');
+    }
       }
   return (
     <div>
