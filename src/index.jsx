@@ -5,7 +5,15 @@ function Index() {
   const [inputValue,setInputValue]=useState('');
   const [cityGuess , setCityGuess]=useState('');
   return (
-    <div>Index</div>
+    <div>
+      <input
+       type="text"
+       value={inputValue}
+       onChange={inputChangeHandler}
+       placeholder='Enter city name'
+       />
+       
+    </div>
   )
 }
 
