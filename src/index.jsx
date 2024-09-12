@@ -1,6 +1,6 @@
 import React from 'react'
 
-function index() {
+function Index() {
  
 const Input = ({handleChange, hint}) => {
   return (
@@ -18,5 +18,5 @@ const Input = ({handleChange, hint}) => {
 };
 }
 
-export default index
+export default Index
 
