@@ -1,4 +1,5 @@
 import React from 'react'
+import cities from './cities.json'
 
 function Index() {
  
