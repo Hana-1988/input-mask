@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import cities from './cities.json'
+import './index.css'
 
 function Index() {
   const [inputValue,setInputValue]=useState('');
