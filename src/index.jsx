@@ -3,7 +3,7 @@ import cities from './cities.json'
 
 function Index() {
   const [inputValue,setInputValue]=useState('');
-  const []
+  const [cityGuess , setCityGuess]=useState('');
   return (
     <div>Index</div>
   )
