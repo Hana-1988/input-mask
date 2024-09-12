@@ -1,4 +1,7 @@
+import React from 'react'
 
+function index() {
+ 
 const Input = ({handleChange, hint}) => {
   return (
     <div className="input">
@@ -13,4 +16,7 @@ const Input = ({handleChange, hint}) => {
     </div>
   );
 };
+}
+
+export default index
 
