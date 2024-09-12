@@ -22,7 +22,7 @@ function Index() {
        onChange={inputChangeHandler}
        placeholder='Enter city name'
        />
-
+       {cityGuess} &&(<div>{cityGuess}</div>)
     </div>
   )
 }
