@@ -4,6 +4,10 @@ import cities from './cities.json'
 function Index() {
   const [inputValue,setInputValue]=useState('');
   const [cityGuess , setCityGuess]=useState('');
+  function inputChangeHandler (c){
+    const value=c.target.value;
+    setInputValue(value);
+      }
   return (
     <div>
       <input
@@ -12,7 +16,7 @@ function Index() {
        onChange={inputChangeHandler}
        placeholder='Enter city name'
        />
-       
+
     </div>
   )
 }
