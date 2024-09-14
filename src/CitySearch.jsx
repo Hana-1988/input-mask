@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import cities from './cities.json'
 import styles from './Citysearch.module.css'
 
-function Citysearch() {
+function CitySearch() {
   const [inputValue,setInputValue]=useState('');
   const [cityGuess , setCityGuess]=useState('');
   function inputChangeHandler (c){
@@ -28,4 +28,4 @@ function Citysearch() {
   )
 }
 
-export default Citysearch
+export default CitySearch

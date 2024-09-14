@@ -1,8 +1,9 @@
 import React from "react";
 import Index from "./Index";
+import Citysearch from "./CitySearch";
 function App() {
    return <div>
-      <Index/>
+      <CitySearch/>
    </div>
 }
 
