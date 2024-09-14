@@ -24,7 +24,6 @@ function Index() {
        placeholder='Enter city name'
        />
        <img src='/1.png'/>
-       {/* {cityGuess} &&(<div>{cityGuess}</div>) */}
     </div>
   )
 }
