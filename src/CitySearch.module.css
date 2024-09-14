@@ -1,10 +1,10 @@
 
 .container {
-  width: 250px;
-  margin: 20px auto;
+  width: 500px;
+  margin: 200px auto;
 }
 
-.input input {
+ input {
   width: 100%;
   font-size: 30px;
   z-index: 2;
@@ -14,7 +14,7 @@
     sans-serif3;
 }
 
-.input label {
+label {
   position: absolute;
   left: 7px;
   top: 0;

@@ -15,7 +15,12 @@
     max-width: 1500px;
     min-height: 100vh;
     padding: 10px;
-    background:#f6f6fc;
+    background-image: url('/public/view-statue-liberty-new-york-city.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.74);
+    /* background:#f6f6fc; */
     color: #a70105;
   }
   *{
