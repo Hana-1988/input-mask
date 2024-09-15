@@ -13,6 +13,11 @@ function CitySearch() {
     }else{setMatchedCity("");
   }},[inputValue]);
 
+  const handleInputChange=(e)=>{
+    const value = e.target.value;
+    setInputValue(capitalizeWords(value);)
+  };
+
   return (
     <div className={styles.container}>
       <input
