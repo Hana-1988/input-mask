@@ -15,7 +15,11 @@ function CitySearch() {
 
   const handleInputChange=(e)=>{
     const value = e.target.value;
-    setInputValue(capitalizeWords(value);)
+    setInputValue(capitalizeWords(value));
+  };
+
+  const capitalizeWords=(str)=>{
+    return str.replace(/\b\w/g , char => char.toUpperCase());
   };
 
   return (
