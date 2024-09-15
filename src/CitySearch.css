@@ -27,31 +27,29 @@
     padding: 0;
     box-sizing: border-box;
   }
-  
-  
-  
-  
-  .container {
+
+  .input-container {
+    position: relative;
     width: 500px;
     margin: 250px 400px 100px -150px;
   }
   
-   input {
+  .city-input {
     width: 100%;
-    font-size: 30px;
-    border-radius: 7px;
-    padding: 10px 10px 10px 20px;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-      sans-serif3;
+    padding: 20px;
+    border-radius: 8px;
+    font-size: 18px;
+    box-sizing: border-box;
+    outline: none;
   }
-  .inputOverlay {
+  
+  .input-overlay {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    padding: 8px;
+    padding: 20px;
     font-size: 18px;
     color: rgba(0, 0, 0, 0.3);
     pointer-events: none;

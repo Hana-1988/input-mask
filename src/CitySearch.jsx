@@ -28,22 +28,19 @@ function CitySearch() {
   };
 
   return (
-    <div className="styles.container">
-      <input
-       type="text"
-       value={inputValue}
-       onChange={handleInputChange}
-       />
-      
-       <img src='/1.png'/>
-
-       <div className="inputOverlay">
-        {inputValue && matchedCity && matchedCity.toLowerCase().startsWith(inputValue.toLowerCase()) 
-          ? matchedCity 
-          : ''}
+    <div className="input-container">
+      <input 
+        type="text"
+        value={inputValue}
+        onChange={handleInputChange}
+        className="city-input"
+      />
+      <div className="input-overlay">
+          {matchedCity}
       </div>
+      <img src='/1.png'/>
     </div>
-  )
+  );
 }
 
 export default CitySearch
