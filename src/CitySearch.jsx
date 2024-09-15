@@ -6,6 +6,12 @@ function CitySearch() {
   const [inputValue,setInputValue]=useState("");
   const [matchedCity, setMatchedCity]=useState("");
  
+  useEffect(()=>{
+    const cityMatch = cities.find(city=>city.toLocaleLowerCase().startsWith(inputValue.toLocaleLowerCase()));
+    if(cityMatch){
+      setMatchedCity(cityMatch);
+    }else{setMatchedCity("");
+  }},[inputValue]);
 
   return (
     <div className={styles.container}>
