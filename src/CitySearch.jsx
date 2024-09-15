@@ -27,17 +27,15 @@ function CitySearch() {
       <input
        type="text"
        value={inputValue}
-       onChange={(e)=>setInputValue(e.target.value)}
+       onChange={handleInputChange}
        placeholder='Enter city name'
        />
-       {cityFilter.length>0 && (<ul>
-        {cityFilter.map((city,index)=>(
-          <li
-          key={index} onClick={()=>setInputValue(city)}>
-            {city}
-          </li>
-        ))}
-       </ul>)}
+       <div className={styles.input-overlay}>
+        {
+          inputValue && matchedCity && matchedCity.toLocaleLowerCase().startsWith(inputValue.toLocaleLowerCase())
+          ? matchedCity : ""
+        }
+       </div>
        <img src='/1.png'/>
     </div>
   )
