@@ -1,42 +1,47 @@
 import React, { useEffect, useState } from 'react'
-import cities from './cities.json'
-import styles from './Citysearch.module.css'
+import cityList from './cities.json'
+import './CitySearch.css'
 
 function CitySearch() {
-  const [inputValue,setInputValue]=useState("");
-  const [matchedCity, setMatchedCity]=useState("");
+  const [inputValue, setInputValue] = useState('');
+  const [matchedCity, setMatchedCity] = useState('');
  
-  useEffect(()=>{
-    const cityMatch = cities.find(city=>city.toLocaleLowerCase().startsWith(inputValue.toLocaleLowerCase()));
-    if(cityMatch){
+  useEffect(() => {
+    const cityMatch = cityList.find(city => 
+      city.toLowerCase().startsWith(inputValue.toLowerCase())
+    );
+    
+    if (cityMatch) {
       setMatchedCity(cityMatch);
-    }else{setMatchedCity("");
-  }},[inputValue]);
+    } else {
+      setMatchedCity('');
+    }
+  }, [inputValue]);
 
-  const handleInputChange=(e)=>{
+  const handleInputChange = (e) => {
     const value = e.target.value;
     setInputValue(capitalizeWords(value));
   };
 
-  const capitalizeWords=(str)=>{
-    return str.replace(/\b\w/g , char => char.toUpperCase());
+  const capitalizeWords = (str) => {
+    return str.replace(/\b\w/g, char => char.toUpperCase());
   };
 
   return (
-    <div className={styles.container}>
+    <div className="styles.container">
       <input
        type="text"
        value={inputValue}
        onChange={handleInputChange}
-       placeholder='Enter city name'
        />
-       <div className={styles.input-overlay}>
-        {
-          inputValue && matchedCity && matchedCity.toLocaleLowerCase().startsWith(inputValue.toLocaleLowerCase())
-          ? matchedCity : ""
-        }
-       </div>
+      
        <img src='/1.png'/>
+
+       <div className="inputOverlay">
+        {inputValue && matchedCity && matchedCity.toLowerCase().startsWith(inputValue.toLowerCase()) 
+          ? matchedCity 
+          : ''}
+      </div>
     </div>
   )
 }
