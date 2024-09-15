@@ -28,6 +28,8 @@ function CitySearch() {
   };
 
   return (
+    <>
+     <div className='header'><h1>List of cities in the <br></br> United States of America</h1></div>
     <div className="input-container">
       <input 
         type="text"
@@ -40,6 +42,7 @@ function CitySearch() {
       </div>
       <img src='/1.png'/>
     </div>
+    </>
   );
 }
 
